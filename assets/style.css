@@ -1,5 +1,38 @@
-body {
-    background-color: blue;
-    color: purple;
-    size: large;
+/** {
+    background-color: lime;
+}*/
+
+h1{
+    position: relative;
+    text-align: center;
+    color: green;
+    background-color: yellow;
+}
+
+/*Set a fixed nav bar in the upper right of page to always be able to find your way through the page */
+ul {
+    list-style: none;
+    font-size: large;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}    
+
+/*Display inline and padding to serperate items - need to be in the li elements and not ul */
+li{
+    display: inline;
+    padding: 0 20px;
+}
+
+/*Center image and contain size */
+img {
+    display: block;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alternative-energy{
+   max-width: 200px;
+   
 }
