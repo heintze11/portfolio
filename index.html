@@ -13,21 +13,23 @@
         <h1 id="Top">Levi's Working Portfolio</h1>
         <!--Set a navigation bar that links to other parts of the page-->
         <nav>
-            <ul>
+            <ul id="header">
                 <li><a href="#About">About</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Top">Top of Page</a></li>
+                <li id="hide"><a href="#Top">Top of Page</a></li>
             </ul>
         </nav>
     </header>
 
     <!--Add image right under header-->
     <article>
-        <img src="assets\profile-pic.jpeg" alt="Levi's Profile Pic">
+        <img id = "profile" src="assets\profile-pic.jpeg" alt="Levi's Profile Pic">
     </article>
 
     <main>
+        <!--add id's to have nav links work-->
+        
         <section id="About">
             <h2>About</h2>
             <p>
@@ -37,15 +39,53 @@
 
         </section>
 
+        <!--Projects section using Flexbox-->
         <section id="Projects">
             <h2>Projects</h2>
-            <article>
+            <section class="applications">
+                <header>Week 1 Challenge</header>
+                <img src="assets\week-1-image.jpg" alt="Working on laptop">
+            </section>
+            <section class="applications">
+                <header>Week 2 Challenge</header>
+                <img src="assets\week-2-image.jpg" alt="Working harder on laptop">
+            </section>
+            <section class="applications">
+                <header>Project 1 Placeholder</header>
+                <img src="assets\placeholder-1.png" alt="Github placeholder pic 1">
+            </section>
+            <section class="applications">
+                <header>Project 2 Placeholder</header>
+                <img src="assets\placeholder-2.jpg" alt="Github placeholder pic 2">
+            </section>
 
-            </article>
+
         </section>
 
+        <!--Create Contact form-->
         <section id="Contact">
             <h2>Contact</h2>
+
+            <form>
+                <ul id="form">
+                  <li>
+                    <label class="contact-form" for="name">Name:</label>
+                    <input type="text" id="name" name="Full Name">
+                  </li>
+                  <li>
+                    <label class="contact-form" for="email">Email:</label>
+                    <input type="text" id="email" name="Email">
+                  </li>
+                  
+                </ul>
+
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+                <article class="contact-form">
+                  <button type="submit">SEND</button>
+                </article>
+              </form>
+              
         </section>
         
     </main>

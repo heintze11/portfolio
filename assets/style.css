@@ -10,7 +10,7 @@ h1{
 }
 
 /*Set a fixed nav bar in the upper right of page to always be able to find your way through the page */
-ul {
+#header {
     list-style: none;
     font-size: large;
     position: fixed;
@@ -19,13 +19,13 @@ ul {
 }    
 
 /*Display inline and padding to serperate items - need to be in the li elements and not ul */
-li{
+#header li {
     display: inline;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 /*Center image and contain size */
-img {
+#profile {
     display: block;
     max-width: 600px;
     margin-left: auto;
@@ -34,5 +34,58 @@ img {
 
 #alternative-energy{
    max-width: 200px;
-   
+}
+
+/*Projects section into a flexbox */
+#Projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.applications header {
+    color: blue;
+    background: yellow;
+
+}
+
+.applications img {
+    width: 200px;
+}
+
+
+
+#form {
+    list-style: none;
+}
+
+#form li {
+    padding: 10px 0px;
+}
+
+textarea {
+    margin-left: 40px;
+}
+
+button {
+    margin-left: 40px;
+}
+
+/*Change behavior for smaller screens */
+@media screen and (max-width: 1025px){
+    #header li {
+        display: block;
+        text-align: center;
+    }
+    #header {
+        position: relative;
+        background-color: yellow;
+    }
+    #profile {
+        object-fit: contain;
+        width: 100%;
+    }
+    #hide {
+        display: none;
+    }
+
 }
