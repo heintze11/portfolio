@@ -13,7 +13,7 @@ h1{
 #header {
     list-style: none;
     font-size: large;
-    position: fixed;
+    position: relative;
     right: 10px;
     top: 10px;
 }    
@@ -45,31 +45,25 @@ h1{
 .applications header {
     color: blue;
     background: yellow;
-
 }
 
-.applications img {
-    width: 200px;
+#week-1 img{
+    width: 800px;
 }
 
-
-
-/* contact form style*/
-#form {
-    list-style: none;
+#week-2 img, #placeholder-1 img, #placeholder-2 img{
+    width: 300px;
 }
 
-#form li {
-    padding: 10px 0px;
+/*Contact Formatting */
+#Contact ul {
+    list-style: none;  
 }
 
-textarea {
-    margin-left: 40px;
+#contact li {
+    display: inline;
 }
 
-button {
-    margin-left: 40px;
-}
 
 /*Change behavior for smaller screens */
 @media screen and (max-width: 1025px){
@@ -86,8 +80,8 @@ button {
         width: 100%;
     }
     /* not working*/
-    #hide {
+    /*#hide {
         display: none;
-    }
+    }*/
 
 }
