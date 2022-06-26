@@ -37,7 +37,7 @@ h1{
 }
 
 /*Projects section into a flexbox */
-#Projects {
+#project-items{
     display: flex;
     flex-wrap: wrap;
 }
@@ -54,6 +54,7 @@ h1{
 
 
 
+/* contact form style*/
 #form {
     list-style: none;
 }
@@ -84,6 +85,7 @@ button {
         object-fit: contain;
         width: 100%;
     }
+    /* not working*/
     #hide {
         display: none;
     }
