@@ -1,15 +1,19 @@
-/** {
-    background-color: lime;
-}*/
 
 h1{
     position: relative;
     text-align: center;
-    color: green;
-    background-color: yellow;
+    color: blue;
+    background-color: gray;
 }
 
-/*Set a fixed nav bar in the upper right of page to always be able to find your way through the page */
+body {
+    background-color: lightslategray;
+    /* background-image: url(./moutains.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-
+}
+
 #header {
     list-style: none;
     font-size: large;
@@ -19,6 +23,11 @@ h1{
 }    
 
 /*Display inline and padding to serperate items - need to be in the li elements and not ul */
+nav {
+    float: right;
+    margin-top: -20px;
+}
+
 #header li {
     display: inline;
     padding: 0 10px;
@@ -27,13 +36,9 @@ h1{
 /*Center image and contain size */
 #profile {
     display: block;
-    max-width: 600px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#alternative-energy{
-   max-width: 200px;
 }
 
 /*Projects section into a flexbox */
@@ -73,7 +78,6 @@ h1{
     }
     #header {
         position: relative;
-        background-color: yellow;
     }
     #profile {
         object-fit: contain;
