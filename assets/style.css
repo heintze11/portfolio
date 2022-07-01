@@ -2,20 +2,20 @@
 header {
     display: flex;
     align-items: center;
-    flex: auto;
     background-color: gray;
+    flex: 0 0 inherit;
+    justify-content: center;
 }
 
 h1{
     color: blue;
-    flex: auto;
 }
 
 header a {
     font-size: large;
     padding: 20px;
-    flex: auto;
 }
+
 
 body {
     background-color: lightslategray;
@@ -24,28 +24,30 @@ body {
     background-repeat: no-repeat;
 }
 
+#About {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-/*Display inline and padding to serperate items - need to be in the li elements and not ul */
-
-
-
+h2 {
+    flex-basis: 15%;
+}
 
 #about-list {
     font-size: large;
 }
 
-/*Center image and contain size */
 #profile {
-    display: block;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 
 /*Projects section into a flexbox */
 #project-items{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .applications header {
@@ -54,7 +56,8 @@ body {
 }
 
 #week-1 img{
-    width: 800px;
+    width: 90%;
+    justify-items: right;
 }
 
 #week-2 img, #placeholder-1 img, #placeholder-2 img{
@@ -72,17 +75,23 @@ body {
 
 
 /*Change behavior for smaller screens */
-@media screen and (max-width: 1025px){
-    /* header  {
-        display: block;
-        text-align: center;
+@media screen and (max-width: 768px){
+    header  {
+        flex-direction: column; 
+        align-items: center;
+        flex: 0 0 inherit;
     }
-    #header {
+    #About {
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 inherit;
+    }
+    /* #header {
         position: relative;
     }
     #profile {
         object-fit: contain;
         width: 100%;
-    }
+    } */
  
-} */
+}
