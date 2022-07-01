@@ -1,9 +1,20 @@
 
-h1{
-    position: relative;
-    text-align: center;
-    color: blue;
+header {
+    display: flex;
+    align-items: center;
+    flex: auto;
     background-color: gray;
+}
+
+h1{
+    color: blue;
+    flex: auto;
+}
+
+header a {
+    font-size: large;
+    padding: 20px;
+    flex: auto;
 }
 
 body {
@@ -11,26 +22,16 @@ body {
     /* background-image: url(./moutains.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
-    background-
 }
 
-#header {
-    list-style: none;
-    font-size: large;
-    position: relative;
-    right: 10px;
-    top: 10px;
-}    
 
 /*Display inline and padding to serperate items - need to be in the li elements and not ul */
-nav {
-    float: right;
-    margin-top: -20px;
-}
 
-#header li {
-    display: inline;
-    padding: 0 10px;
+
+
+
+#about-list {
+    font-size: large;
 }
 
 /*Center image and contain size */
@@ -72,7 +73,7 @@ nav {
 
 /*Change behavior for smaller screens */
 @media screen and (max-width: 1025px){
-    #header li {
+    /* header  {
         display: block;
         text-align: center;
     }
@@ -83,9 +84,5 @@ nav {
         object-fit: contain;
         width: 100%;
     }
-    /* not working*/
-    /*#hide {
-        display: none;
-    }*/
-
-}
+ 
+} */
