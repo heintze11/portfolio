@@ -1,14 +1,21 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightslategray;
+    /* background-image: url(./moutains.jpg);  
+    background-size: contain;    didn't look good - keeping for reference
+    background-repeat: no-repeat; */
+}
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* Header and nav bar */
 header {
     display: flex;
     align-items: center;
     background-color: gray;
-    flex: 0 0 inherit;
     justify-content: space-between;
 }
 
@@ -29,14 +36,8 @@ nav a:hover {
     color: darkblue
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightslategray;
-    /* background-image: url(./moutains.jpg); */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
+/* About Section */
 #About {
     display: flex;
     flex-direction: row;
@@ -65,24 +66,23 @@ h2 {
 
 .applications {
     margin: 20px;
-
 }
 
 #week-1 {
-    width: 85%;
-    justify-items: center;
-}
-
-
-.applications header {
-    color: blue;
-    background: yellow;
+    width: 100%;
+    justify-self: center;
 }
 
 #week-1 img{
     width: 100%;
     flex: 1 1 auto;
-    
+}
+
+.applications header {
+    color: black;
+    background: deepskyblue;
+    font-size: x-large;
+    justify-self: center;
 }
 
 #week-2 img, #placeholder-1 img, #placeholder-2 img{
@@ -127,17 +127,4 @@ h2 {
         align-items: center;
     }
 
-    #Contact p {
-        padding: 5px;
-    }
-
-
-    /* #header {
-        position: relative;
-    }
-    #profile {
-        object-fit: contain;
-        width: 100%;
-    } */
- 
 }
