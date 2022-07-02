@@ -9,22 +9,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <h1>Levi Heintzelman's Portfolio</h1>
-        <!--Set a navigation bar that links to other parts of the page-->
-        <!-- <nav> -->
-            <!-- <ul id="header">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> -->
+        <nav>    
             <a href="#About">About</a>
             <a href="#Projects">Projects</a>
             <a href="#Contact">Contact</a>
-        <!-- </nav> -->
+        </nav>    
     </header>
 
-    <main>
+    <main class="container">
         <!--add id's to have nav links work-->
         
         <section id="About">
@@ -39,10 +33,10 @@
 
         </section>
 
-        <!--Projects section using Flexbox. H2 outside of section to allow the header to be above the flexbox-->
         <!--Create a href before the div to have the entire flexbox act as a link-->
-        <h2 id="Projects">Projects</h2>
+        
         <section id="project-items">
+            <h2 id="Projects">Projects</h2>
             <a href="https://heintze11.github.io/week-1-portfolio/" class="applications" id="week-1">
                 <div>
                     <header>Week 1 Challenge</header>
@@ -78,12 +72,8 @@
         <!--Create Contact form-->
         <section id="Contact">
             <h2>Contact</h2>
-            <ul>
-                <li><a href="mailto:Levi.Heintzelman@gmail.com">Levi.Heintzelman@gmail.com</a></li>
-                <li>xxx-xxx-xxxx</li>
-            </ul>
-            
-              
+                <a href="mailto:Levi.Heintzelman@gmail.com">Levi.Heintzelman@gmail.com</a>
+                <p>xxx-xxx-xxxx</p>
         </section>
         
     </main>
