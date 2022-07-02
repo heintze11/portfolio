@@ -14,6 +14,7 @@ Create a portfolio using Advanced CSS and Flexbox. Must have working links to mu
 
 ## Links
 -[Github code link](https://github.com/heintze11/week-2-portfolio)
+
 -[Github pages link](https://heintze11.github.io/week-2-portfolio/)
 
 ## App Screenshot
