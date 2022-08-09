@@ -68,12 +68,12 @@ h2 {
     margin: 20px;
 }
 
-#week-1 {
+#project-1 {
     width: 100%;
     justify-self: center;
 }
 
-#week-1 img{
+#project-1 img{
     width: 100%;
     flex: 1 1 auto;
 }
